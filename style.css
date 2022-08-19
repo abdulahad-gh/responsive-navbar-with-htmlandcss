@@ -48,11 +48,60 @@ a:hover {
     transition: .5s;
 }
 
-.check-btn {
+.checkbtn {
     color: white;
     font-size: 30px;
     float: right;
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* responsive for md devices */
+@media (max-width:952px) {
+    label.logo {
+        padding-left: 50px;
+        font-size: 30px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        background-color: rgb(36, 36, 102);
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        left: -100%;
+        height: 100vh;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    a.active,
+    a:hover {
+        background: none;
+        color: gray;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
 }
