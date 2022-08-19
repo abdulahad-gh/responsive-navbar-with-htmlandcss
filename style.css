@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background-color: gray;
+    height: 80px;
+}
+
+label.logo {
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+}
